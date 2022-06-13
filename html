@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <title>SOC Advising Forms</title>
+
+  <head>
+    <h1>SOC Advising Forms</h1>
+  </head>
+
+  <body>
+    <select id="Forms" name="Forms" required>
+      <option value="" disabled selected>Select your option</option>
+      <option value="Major">Submit your major declaration</option>
+      <option value="Minor">Submit your minor declaration</option>
+      <option value="Drop">Request to drop SOC major or minor</option>
+    </select>
+
+    <!-- FORMS -->
+    <div id="Major" class="otherElements hidden">
+      <!-- Major form here: -->
+      <h2>
+        Major Declaration Form
+      </h2>
+    </div>
+
+
+    <div id="Minor" class="otherElements hidden">
+      <!-- Minor form here: -->
+      <h2>
+        Minor Declaration Form
+      </h2>
+    </div>
+
+
+    <div id="Drop" class="otherElements hidden">
+      <!-- Drop form here: -->
+      <h2>
+        Request to Drop Major or Minor Form
+      </h2>
+      
+      <p>If you are currently a SOC major, are you declaring a new SOC major? If so, complete this form then declare a new major using the major declaration form.</p>
+
+      <span>Are you withdrawing from a SOC major or minor?</span>
+      <select id="majorMinor" name="majorMinor" required>
+        <option value="" disabled selected>Select your option</option>
+        <option value="dropMajor">Major</option>
+        <option value="dropMinor">Minor</option>
+      </select>
+      <br>
+      
+      
+      <!--Major or Minor Drop Form-->
+      <div id="dropMajor" class="dropOtherElements hidden">
+        <!-- Drop Major form here: -->
+        <hr>
+        <section class="created">
+          <label for="createdOn">Created On:</label>
+          <input type="text" name="createdOn" id="createdOn">
+        </section>
+        <hr>
+        <section class="lastn">
+          <label for="lastName">Student Last Name:</label>
+          <input type="text" name="lastName" id="lastName">
+        </section>
+        <hr>
+        <section class="firstn">
+          <label for="firstName">Student First Name:</label>
+          <input type="text" name="firstName" id="firstName">
+        </section>
+        <hr>
+        <section class="AUID">
+          <label for="auID">AUID:</label>
+          <input type="auID" name="auID" id="auID">
+        </section>
+        <hr>
+        <section class="email">
+          <label for="auEmail">AU E-mail:</label>
+          <input type="auEmail" name="auEmail" id="auEmail">
+        </section>
+        <hr>
+        <section class="gpa">
+          <label for="formGpa">GPA:</label>
+          <input type="formGpa" name="formGpa" id="formGpa">
+        </section>
+        <hr>
+        <section class="advisor">
+          <label for="auAdvisor">AU SOC Advisor:</label>
+          <select type="auAdvisor" name="auAdvisor" id="auAdvisor">
+            <option value="" disabled selected>Select your option</option>
+            <option value="kylie">Kylie Stigler</option>
+            <option value="tara">Tara Flakker</option>
+            <option value="jesse">Jesse Nelson</option>
+          </select>
+        </section>
+        <hr>
+
+        <section class="withdrawORtransfer">
+          <span>Are you withdrawing from American University or transferring to another major at AU?</span>
+          <br>
+          <input type="radio" name="withdrawTransfer" id="withdraw" value="withdraw">
+          <label for="withdraw">Withdrawing from the University (Withdrawing from AU requires a separate form along with this one - contact your advisor for more information.)</label>
+          <br>
+          <input type="radio" name="withdrawTransfer" id="transfer" value="transfer">
+          <label for="transfer">Transferring within the University</label>
+
+        </section>
+        <hr>
+        <section class="transfer">
+          <label for="formTransfer">If transferring within the University, which school or college within AU are you transferring to?</label>
+          <select type="formTransfer" name="formTransfer" id="formTransfer">
+            <option value="" disabled selected>Select your option</option>
+            <option value="cas">CAS</option>
+            <option value="kogod">Kogod</option>
+            <option value="soe">SOE</option>
+            <option value="sis">SIS</option>
+            <option value="spa">SPA</option>
+          </select>
+        </section>
+        <hr>
+        <section class="info">
+          <label for="formInfo">OPTIONAL: Tell us why you are withdrawing from SOC. Do you have any suggestions for improvements to our programs?</label>
+          <br>
+          <textarea id="formInfo" name="formInfo" rows="4" cols="50"></textarea>
+        </section>
+        <hr>
+        <br>
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+      </div>
+
+
+    </div>
+    <div id="dropMinor" class="dropOtherElements hidden">
+      <!-- Drop Minor form here: -->
+      <hr>
+      <section class="created">
+        <label for="createdOn">Created On:</label>
+        <input type="text" name="minorCreatedOn" id="minorCreatedOn">
+      </section>
+      <hr>
+      <section class="lastn">
+        <label for="lastName">Student Last Name:</label>
+        <input type="text" name="minorLastName" id="minorLastName">
+      </section>
+      <hr>
+      <section class="firstn">
+        <label for="firstName">Student First Name:</label>
+        <input type="text" name="minorFirstName" id="minorFirstName">
+      </section>
+      <hr>
+      <section class="AUID">
+        <label for="auID">AUID:</label>
+        <input type="text" name="minorauID" id="minorauID">
+      </section>
+      <hr>
+      <section class="email">
+        <label for="auEmail">AU E-mail:</label>
+        <input type="text" name="minorauEmail" id="minorauEmail">
+      </section>
+      <hr>
+      <section class="gpa">
+        <label for="formGpa">GPA:</label>
+        <input type="text" name="minorformGpa" id="minorformGpa">
+      </section>
+      <hr>
+      <section class="advisor">
+        <label for="auAdvisor">AU SOC Advisor:</label>
+        <select type="auAdvisor" name="minorauAdvisor" id="minorauAdvisor">
+          <option value="" disabled selected>Select your option</option>
+          <option value="kylie">Kylie Stigler</option>
+          <option value="tara">Tara Flakker</option>
+          <option value="jesse">Jesse Nelson</option>
+        </select>
+      </section>
+      <hr>
+      <section class="info">
+        <label for="formInfo">OPTIONAL: Tell us why you are withdrawing from the SOC minor. Do you have any suggestions for improvements to our programs?</label>
+        <br>
+        <textarea id="minorformInfo" name="minorformInfo" rows="4" cols="50"></textarea>
+      </section>
+      <hr>
+      <br>
+      <section class="submission">
+        <input type="submit" value="Submit">
+      </section>
+      
+    </div>
+
+  </body>
+
+</html>
