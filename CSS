@@ -1,0 +1,7 @@
+.hidden {
+  display: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
