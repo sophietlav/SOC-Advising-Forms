@@ -17,27 +17,23 @@
     <!-- FORMS -->
     <div id="Major" class="otherElements hidden">
       <!-- Major form here: -->
-      <h2>
-        Major Declaration Form
-      </h2>
+      <h2>Major Declaration Form</h2>
     </div>
-
 
     <div id="Minor" class="otherElements hidden">
       <!-- Minor form here: -->
-      <h2>
-        Minor Declaration Form
-      </h2>
+      <h2>Minor Declaration Form</h2>
     </div>
-
 
     <div id="Drop" class="otherElements hidden">
       <!-- Drop form here: -->
-      <h2>
-        Request to Drop Major or Minor Form
-      </h2>
-      
-      <p>If you are currently a SOC major, are you declaring a new SOC major? If so, complete this form then declare a new major using the major declaration form.</p>
+      <h2>Request to Drop Major or Minor Form</h2>
+
+      <p>
+        If you are currently a SOC major, are you declaring a new SOC major? If
+        so, complete this form then declare a new major using the major
+        declaration form.
+      </p>
 
       <span>Are you withdrawing from a SOC major or minor?</span>
       <select id="majorMinor" name="majorMinor" required>
@@ -45,43 +41,42 @@
         <option value="dropMajor">Major</option>
         <option value="dropMinor">Minor</option>
       </select>
-      <br>
-      
-      
+      <br />
+
       <!--Major or Minor Drop Form-->
       <div id="dropMajor" class="dropOtherElements hidden">
         <!-- Drop Major form here: -->
-        <hr>
+        <hr />
         <section class="date">
           <label for="formDate">Date:</label>
-          <input type="text" name="formDate" id="formDate">
+          <input type="text" name="formDate" id="formDate" />
         </section>
-        <hr>
+        <hr />
         <section class="lastn">
           <label for="lastName">Student Last Name:</label>
-          <input type="text" name="lastName" id="lastName">
+          <input type="text" name="lastName" id="lastName" />
         </section>
-        <hr>
+        <hr />
         <section class="firstn">
           <label for="firstName">Student First Name:</label>
-          <input type="text" name="firstName" id="firstName">
+          <input type="text" name="firstName" id="firstName" />
         </section>
-        <hr>
+        <hr />
         <section class="AUID">
           <label for="auID">AUID:</label>
-          <input type="auID" name="auID" id="auID">
+          <input type="auID" name="auID" id="auID" />
         </section>
-        <hr>
+        <hr />
         <section class="email">
           <label for="auEmail">AU E-mail:</label>
-          <input type="auEmail" name="auEmail" id="auEmail">
+          <input type="auEmail" name="auEmail" id="auEmail" />
         </section>
-        <hr>
+        <hr />
         <section class="gpa">
           <label for="formGpa">GPA:</label>
-          <input type="formGpa" name="formGpa" id="formGpa">
+          <input type="formGpa" name="formGpa" id="formGpa" />
         </section>
-        <hr>
+        <hr />
         <section class="advisor">
           <label for="auAdvisor">AU SOC Advisor:</label>
           <select type="auAdvisor" name="auAdvisor" id="auAdvisor">
@@ -91,21 +86,40 @@
             <option value="jesse">Jesse Nelson</option>
           </select>
         </section>
-        <hr>
+        <hr />
 
         <section class="withdrawORtransfer">
-          <span>Are you withdrawing from American University or transferring to another major at AU?</span>
-          <br>
-          <input type="radio" name="withdrawTransfer" id="withdraw" value="withdraw">
-          <label for="withdraw">Withdrawing from the University (Withdrawing from AU requires a separate form along with this one - contact your advisor for more information.)</label>
-          <br>
-          <input type="radio" name="withdrawTransfer" id="transfer" value="transfer">
+          <span
+            >Are you withdrawing from American University or transferring to
+            another major at AU?</span
+          >
+          <br />
+          <input
+            type="radio"
+            name="withdrawTransfer"
+            id="withdraw"
+            value="withdraw"
+          />
+          <label for="withdraw"
+            >Withdrawing from the University (Withdrawing from AU requires a
+            separate form along with this one - contact your advisor for more
+            information.)</label
+          >
+          <br />
+          <input
+            type="radio"
+            name="withdrawTransfer"
+            id="transfer"
+            value="transfer"
+          />
           <label for="transfer">Transferring within the University</label>
-
         </section>
-        <hr>
+        <hr />
         <section class="transfer">
-          <label for="formTransfer">If transferring within the University, which school or college within AU are you transferring to?</label>
+          <label for="formTransfer"
+            >If transferring within the University, which school or college
+            within AU are you transferring to?</label
+          >
           <select type="formTransfer" name="formTransfer" id="formTransfer">
             <option value="" disabled selected>Select your option</option>
             <option value="cas">CAS</option>
@@ -115,54 +129,55 @@
             <option value="spa">SPA</option>
           </select>
         </section>
-        <hr>
+        <hr />
         <section class="info">
-          <label for="formInfo">OPTIONAL: Your input matters to us. Please provide us with any feedback that will help us improve our services/programs.</label>
-          <br>
+          <label for="formInfo"
+            >OPTIONAL: Your input matters to us. Please provide us with any
+            feedback that will help us improve our services/programs.</label
+          >
+          <br />
           <textarea id="formInfo" name="formInfo" rows="4" cols="50"></textarea>
         </section>
-        <hr>
-        <br>
+        <hr />
+        <br />
         <section class="submission">
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" />
         </section>
       </div>
-
-
     </div>
     <div id="dropMinor" class="dropOtherElements hidden">
       <!-- Drop Minor form here: -->
-      <hr>
+      <hr />
       <section class="date">
         <label for="minorFormDate">Date:</label>
-        <input type="text" name="minorFormDate" id="minorFormDate">
+        <input type="text" name="minorFormDate" id="minorFormDate" />
       </section>
-      <hr>
+      <hr />
       <section class="lastn">
         <label for="lastName">Student Last Name:</label>
-        <input type="text" name="minorLastName" id="minorLastName">
+        <input type="text" name="minorLastName" id="minorLastName" />
       </section>
-      <hr>
+      <hr />
       <section class="firstn">
         <label for="firstName">Student First Name:</label>
-        <input type="text" name="minorFirstName" id="minorFirstName">
+        <input type="text" name="minorFirstName" id="minorFirstName" />
       </section>
-      <hr>
+      <hr />
       <section class="AUID">
         <label for="auID">AUID:</label>
-        <input type="text" name="minorauID" id="minorauID">
+        <input type="text" name="minorauID" id="minorauID" />
       </section>
-      <hr>
+      <hr />
       <section class="email">
         <label for="auEmail">AU E-mail:</label>
-        <input type="text" name="minorauEmail" id="minorauEmail">
+        <input type="text" name="minorauEmail" id="minorauEmail" />
       </section>
-      <hr>
+      <hr />
       <section class="gpa">
         <label for="formGpa">GPA:</label>
-        <input type="text" name="minorformGpa" id="minorformGpa">
+        <input type="text" name="minorformGpa" id="minorformGpa" />
       </section>
-      <hr>
+      <hr />
       <section class="advisor">
         <label for="auAdvisor">AU SOC Advisor:</label>
         <select type="auAdvisor" name="minorauAdvisor" id="minorauAdvisor">
@@ -172,20 +187,25 @@
           <option value="jesse">Jesse Nelson</option>
         </select>
       </section>
-      <hr>
+      <hr />
       <section class="info">
-        <label for="formInfo">OPTIONAL: Your input matters to us. Please provide us with any feedback that will help us improve our services/programs.</label>
-        <br>
-        <textarea id="minorformInfo" name="minorformInfo" rows="4" cols="50"></textarea>
+        <label for="formInfo"
+          >OPTIONAL: Your input matters to us. Please provide us with any
+          feedback that will help us improve our services/programs.</label
+        >
+        <br />
+        <textarea
+          id="minorformInfo"
+          name="minorformInfo"
+          rows="4"
+          cols="50"
+        ></textarea>
       </section>
-      <hr>
-      <br>
+      <hr />
+      <br />
       <section class="submission">
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" />
       </section>
-      
     </div>
-
   </body>
-
 </html>

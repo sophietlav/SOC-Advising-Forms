@@ -4,27 +4,22 @@ function formSelect() {
   var Minor = document.getElementById("Minor");
   var Drop = document.getElementById("Drop");
 
-
   // Listen to changes in <select>
-  Forms.addEventListener('change', function() {
-
+  Forms.addEventListener("change", function () {
     // Get the value of selected <option>
     let value = this.options[this.selectedIndex].value;
 
     // Hide all other elements, but show the one whose ID matches option value
-    let otherElements = document.querySelectorAll('.otherElements');
+    let otherElements = document.querySelectorAll(".otherElements");
     for (let i = 0; i < otherElements.length; i++) {
       let el = otherElements[i];
 
-      if (el.id === value)
-        el.style.display = 'block';
-      else
-        el.style.display = 'none';
+      if (el.id === value) el.style.display = "block";
+      else el.style.display = "none";
     }
-  })
+  });
 }
 formSelect();
-
 
 function dropMM() {
   var majorMinor = document.getElementById("majorMinor");
@@ -32,21 +27,18 @@ function dropMM() {
   var dropMinor = document.getElementById("dropMinor");
 
   // Listen to changes in <select>
-  majorMinor.addEventListener('change', function() {
-
+  majorMinor.addEventListener("change", function () {
     // Get the value of selected <option>
     let value = this.options[this.selectedIndex].value;
 
     // Hide all other elements, but show the one whose ID matches option value
-    let dropOtherElements = document.querySelectorAll('.dropOtherElements');
+    let dropOtherElements = document.querySelectorAll(".dropOtherElements");
     for (let i = 0; i < dropOtherElements.length; i++) {
       let el = dropOtherElements[i];
 
-      if (el.id === value)
-        el.style.display = 'block';
-      else
-        el.style.display = 'none';
+      if (el.id === value) el.style.display = "block";
+      else el.style.display = "none";
     }
-  })
+  });
 }
 dropMM();
